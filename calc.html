@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>Katculator</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="https://freepngimg.com/download/cat/60732-oreo-illustrator-cat-android-nougat-emoji.png">
     <!-- from https://www.bootstrapcdn.com/ -->
     <!--- see also https://getbootstrap.com/docs/4.0/getting-started/download/ -->
     <link
@@ -46,24 +49,38 @@
         }
         .result {
             padding-top: 20px;
+            
         }
         .btn-tertiary {
             background-color: forestgreen;
             color: #ffffff;
-            margin-top: 10px;
             
+        }
+        .title {
+            color:#ff00b4;
+            margin-bottom:25px;
+        }
+        .btn-secondary {
+            background-color: #4c3ea6;
+          
+        }
+
+        .answer {
+            font-size: 50px;
+        
         }
     </style>
 </head>
 <body>
     <!-- https://getbootstrap.com/docs/4.0/components/card/ -->
-    <div class="card" style="width: 28rem;">
-        Calculator
+    <div class="card" style="width: 33rem;">
         <div class="card-body">
+            
             <form name="inputs">
                 <div class="container">
+                    <h3 class="title">😺Katculator😺</h3>
                     <div class="form-group">
-                        <label>Number 1:</label>
+                        
                         <input
                             type="number"
                             name="number1"
@@ -73,7 +90,7 @@
                         <small class="form-text text-muted">Enter the first number</small>
                     </div>
                     <div class="form-group">
-                        <label>Number 2:</label>
+                        
                         <input
                             type="number"
                             name="number2"
@@ -90,12 +107,11 @@
                         <button type="button" class="btn btn-tertiary" onclick="calculator.exponent()">exponent</button>
                     </div>
                     <div class="form-group result">
-                        <label>Result</label>
                         <input
                             type="text"
                             name="result"
-                            class="form-control"
-                            placeholder="Result"
+                            class="form-control answer"
+                            placeholder="Result" 
                             readonly
                         >
                     </div>
